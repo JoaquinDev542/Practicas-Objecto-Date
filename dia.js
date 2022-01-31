@@ -1,4 +1,4 @@
-// 1- Mediante una fecha dada pasada, calcular que día de la semana es
+// 1- Mediante una fecha dada pasada o futura, calcular que día de la semana es o será.
 
 alert("¿Quieres saber que día de la semana naciste o que día de la semana será en el futuro?");
 
@@ -22,3 +22,4 @@ if(fechaCompleta > fechaActual) {
     document.write(`Naciste el día ${dias} ${dia} de ${meses} del ${anio}.`);
 }
 
+//Argen08
