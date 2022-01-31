@@ -1,6 +1,8 @@
 // 1- Mediante una fecha dada pasada, calcular que día de la semana es
 
-alert("¿Quieres saber que día de la semana naciste?");
+alert("¿Quieres saber que día de la semana naciste o que día de la semana será en el futuro?");
+
+let fechaActual = new Date();
 
 let dia = prompt("Día:");
 let mes = prompt("Mes:");
@@ -13,4 +15,10 @@ let meses = ["Enero" , "Febrero" , "Marzo" , "Abril" , "Mayo" , "Junio" , "Julio
 let fechaCompleta = new Date(`${mes} , ${dia} , ${anio}`);
 dias = dias[fechaCompleta.getDay()];
 meses = meses[fechaCompleta.getMonth()];
-document.write(`Naciste el día ${dias} ${dia} de ${meses} del ${anio}.`);
+
+if(fechaCompleta > fechaActual) {
+    document.write(`El ${dia} de ${meses} del ${anio} será ${dias}.`);
+} else {
+    document.write(`Naciste el día ${dias} ${dia} de ${meses} del ${anio}.`);
+}
+
